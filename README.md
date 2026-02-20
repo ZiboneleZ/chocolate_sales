@@ -1,5 +1,5 @@
 1. 🍫 Chocolate Sales Intelligence System
-  An end-to-end data analytics suite designed to transform raw sales records into actionable business insights. This project demonstrates a modular Python architecture for data processing and a automated Excel      dashboard for executive reporting.
+An end-to-end data analytics suite designed to transform raw sales records into actionable business insights. This project demonstrates a modular Python architecture for data processing and a automated Excel      dashboard for executive reporting.
 
 🚀 Project Overview
   This repository contains two primary analytical solutions:
