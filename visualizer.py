@@ -18,7 +18,7 @@ def revenue_by_country(df):
 def sales_performance(df):
     plt.figure(figsize=(12.5, 6.5))
     sales_perf = df.groupby('Sales Person')['Amount'].sum().sort_values(ascending=False).head(10).reset_index()
-    sns.barplot(sales_perf, x='Amount', y='Sales Person', hue='Sales Person', palette='magma')
+    sns.barplot(sales_perf, x='Amount', y='Sales Person', hue='Sales Person', palette='crest')
     plt.title('Top 10 Sales People', fontsize=15)
     plt.savefig('outputs/top_sales_people.png')
 
@@ -26,7 +26,7 @@ def sales_performance(df):
 def product_sales(df):
     plt.figure(figsize=(12.5, 6.5))
     products = df.groupby('Product')['Amount'].sum().sort_values(ascending=False).head(10).reset_index()
-    sns.barplot(products, x='Amount', y='Product', hue='Amount', palette=('flare'))
+    sns.barplot(products, x='Amount', y='Product', hue='Amount', palette='flare')
     plt.title('Top 10 Products Sold', fontsize=15)
     plt.savefig('outputs/top_10_products.png')
 
